@@ -17,8 +17,12 @@ export function NoteForm() {
               <Form.Label>Tags</Form.Label>
               <CreatableReactSelect isMulti />
             </Form.Group>
-          </Col>
+          </Col>        
         </Row>
+        <Form.Group controlId="markdown">
+          <Form.Label>Body</Form.Label>
+          <Form.Control required as="textarea" rows={15}/>
+        </Form.Group>
       </Stack>
     </Form>
   )
