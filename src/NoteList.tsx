@@ -1,5 +1,19 @@
+import { Button, Col, Row, Stack } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
 export function NoteList() {
   return (
-    <h1>List</h1>
+    <>
+      <Row>
+        <Col><h1>Notes</h1></Col>
+        <Col xs="auto">
+          <Stack gap={2} direction="horizontal">
+            <Link to="/new">
+              <Button variant="primary">Create</Button>
+            </Link>
+          </Stack>
+        </Col>
+      </Row>
+    </>
   )
 }
