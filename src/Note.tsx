@@ -30,7 +30,9 @@ export function Note() {
               <Button variant="primary">Edit</Button>
             </Link>
             <Button variant="outline-danger">Delete</Button>
-            <Button variant="outline-secondary">Back</Button>
+            <Link to="/">
+              <Button variant="outline-secondary">Back</Button>
+            </Link>
           </Stack>
         </Col>
       </Row>
